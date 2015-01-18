@@ -1,6 +1,10 @@
 package App;
 
+import Control.ButtonNextListener;
+import Control.ButtonPrevListener;
 import View.UI.MainFrame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class App {
 
@@ -8,6 +12,18 @@ public class App {
     public static void main(String[] args) {
         
         MainFrame frame = new MainFrame(imageFolder);
+        
+        frame.registerPevListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        new ButtonPrevListener().buttonPressed();
+                    }
+        });
+        frame.registerNextListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        new ButtonNextListener().buttonPressed();
+                    }
+        });
+        
     }
     
 }
