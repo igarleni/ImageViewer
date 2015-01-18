@@ -13,14 +13,14 @@ public class App {
         
         MainFrame frame = new MainFrame(imageFolder);
         
-        frame.registerPevListener(new ActionListener() {
+        frame.registerPrevListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
-                        new ButtonPrevListener().buttonPressed();
+                        new ButtonPrevListener().buttonPressed(/**frame.get panel de imagen*/);
                     }
         });
         frame.registerNextListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
-                        new ButtonNextListener().buttonPressed();
+                        new ButtonNextListener().buttonPressed(/**frame.get panel de imagen*/);
                     }
         });
         

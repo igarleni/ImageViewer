@@ -24,6 +24,7 @@ public class MainFrame extends JFrame{
 
     private ActionListener actionListenerPrev;
     private ActionListener actionListenerNext;
+    private NorthPanel northPanel;
     
     public MainFrame(String imageFolder) {
         setTitle("ImageViewer");
@@ -77,15 +78,11 @@ public class MainFrame extends JFrame{
     }
 
     public void registerPrevListener(ActionListener actionListener) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void registerPevListener(ActionListener actionListener) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.actionListenerPrev = actionListener;
     }
 
     public void registerNextListener(ActionListener actionListener) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.actionListenerNext = actionListener;
     }
     
 }
