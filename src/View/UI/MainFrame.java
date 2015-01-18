@@ -5,10 +5,10 @@
  */
 package View.UI;
 
+import Model.Image;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.PopupMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -25,14 +25,16 @@ public class MainFrame extends JFrame{
     private ActionListener actionListenerPrev;
     private ActionListener actionListenerNext;
     private NorthPanel northPanel;
+    private Image currentImage;
     
-    public MainFrame(String imageFolder) {
+    public MainFrame(Image currentImage) {
         setTitle("ImageViewer");
         setMinimumSize(new Dimension(300, 180));
         setResizable(false);
         setLocation(500, 500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         createWidgets();
+        this.currentImage = currentImage;
         setVisible(true);
     }
 
@@ -50,7 +52,7 @@ public class MainFrame extends JFrame{
     }
 
     private Component createNorthPannel() {
-        NorthPanel np = new NorthPanel();
+        NorthPanel np = new NorthPanel(currentImage);
         northPanel = np;
         return np;
     }
