@@ -15,12 +15,12 @@ public class App {
         
         frame.registerPrevListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
-                        new ButtonPrevListener().buttonPressed(/**frame.get panel de imagen*/);
+                        new ButtonPrevListener().buttonPressed(frame.getNorthPanel());
                     }
         });
         frame.registerNextListener(new ActionListener() {
                     public void actionPerformed(ActionEvent e) {
-                        new ButtonNextListener().buttonPressed(/**frame.get panel de imagen*/);
+                        new ButtonNextListener().buttonPressed(frame.getNorthPanel());
                     }
         });
         

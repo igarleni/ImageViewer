@@ -5,7 +5,7 @@
  */
 package Control;
 
-import java.awt.event.ActionEvent;
+import javax.swing.JPanel;
 
 /**
  *
@@ -14,8 +14,9 @@ import java.awt.event.ActionEvent;
 public class ButtonNextListener implements Button{
 
     @Override
-    public void buttonPressed() {
+    public void buttonPressed(JPanel panel) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
 
 }

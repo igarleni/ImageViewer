@@ -50,7 +50,9 @@ public class MainFrame extends JFrame{
     }
 
     private Component createNorthPannel() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        NorthPanel np = new NorthPanel();
+        northPanel = np;
+        return np;
     }
 
     private Component createPrevButton() {
@@ -83,6 +85,10 @@ public class MainFrame extends JFrame{
 
     public void registerNextListener(ActionListener actionListener) {
         this.actionListenerNext = actionListener;
+    }
+
+    public JPanel getNorthPanel() {
+        return northPanel;
     }
     
 }
