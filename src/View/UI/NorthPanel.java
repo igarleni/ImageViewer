@@ -1,7 +1,6 @@
 package View.UI;
 
 import Model.Image;
-import View.Persistence.ImageListLoader;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;

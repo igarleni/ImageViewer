@@ -89,7 +89,7 @@ public class MainFrame extends JFrame{
         this.actionListenerNext = actionListener;
     }
 
-    public JPanel getNorthPanel() {
+    public NorthPanel getNorthPanel() {
         return northPanel;
     }
     

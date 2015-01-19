@@ -1,12 +1,12 @@
 package Control;
 
-import javax.swing.JPanel;
+import View.UI.NorthPanel;
 
 public class ButtonNextListener implements Button{
 
     @Override
-    public void buttonPressed(JPanel panel) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void buttonPressed(NorthPanel northPanel) {
+        northPanel.setImage(northPanel.getImage().getNext());
     }
 
 

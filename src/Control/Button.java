@@ -1,9 +1,9 @@
 package Control;
 
-import javax.swing.JPanel;
+import View.UI.NorthPanel;
 
 public interface Button{
     
-    public void buttonPressed(JPanel panel);
+    public void buttonPressed(NorthPanel northPanel);
     
 }
