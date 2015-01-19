@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 
 public class App {
 
-    private static final String imageFolder = "C:\\Users\\Italo\\Pictures";
+    private static final String imageFolder = "C:\\Users\\Italo\\Pictures\\";
     public static void main(String[] args) {
         ImageListLoader imageListLoader = new ImageListLoader(imageFolder);
         MainFrame frame = new MainFrame(imageListLoader.load());
