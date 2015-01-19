@@ -28,19 +28,22 @@ public class MainFrame extends JFrame{
     private Image currentImage;
     
     public MainFrame(Image currentImage) {
-        setTitle("ImageViewer");
-        setMinimumSize(new Dimension(300, 180));
-        setResizable(false);
-        setLocation(500, 500);
+        super(" Image Viewer ");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        createWidgets();
+        setMinimumSize(new Dimension(900,700));
+        setResizable(false);
         this.currentImage = currentImage;
-        setVisible(true);
     }
 
+    public void execute (){
+        createWidgets();
+        setVisible(true);
+        
+    }
+    
     private void createWidgets() {
         this.add(createSouthPannel(),BorderLayout.SOUTH);
-        this.add(createNorthPannel(),BorderLayout.NORTH);
+        this.add(createNorthPannel());
     }
 
     private Component createSouthPannel() {

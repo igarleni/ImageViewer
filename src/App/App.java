@@ -25,6 +25,8 @@ public class App {
                     }
         });
         
+        frame.execute();
+        
     }
     
 }
